@@ -1,0 +1,447 @@
+body {
+    font-family: “游ゴシック“, YuGothic, “ヒラギノ角ゴ Pro W3”, “Hiragino Kaku Gothic Pro”, “メイリオ“, Meiryo, “ＭＳ Ｐゴシック“, “MS PGothic”, sans-serif;
+    min-width: 1200px;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    background-image: url(top.jpg);
+    background-size: cover;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+/*ナビゲーションのレイアウト*/
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-bottom {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*検索フォーム*/
+.header-bottom form {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.75);
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+}
+
+.header-bottom input {
+    background-color: white;
+    border: solid 1px black;
+    padding: 5px;
+    height: 30px;
+    width: 250px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.header-bottom input[value="検索"] {
+    background-color:#ff4500;
+    background-image: url(icon07.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding: 5px 10px 5px 35px;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+
+}
+
+.navigation {
+    display: flex;
+    color: white;
+    margin-right: 10px;
+}
+
+.navigation a {
+    padding-right: 30px;
+}
+
+.main {
+    padding: 0 40px;
+    background-color: white;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+/*左のコンテンツ*/
+.leftbar {
+    width: 800px;
+    margin: 0px 50px 0px 40px;
+}
+
+/*おすすめのエリア*/
+.areatitle {
+    display: flex;
+    align-items: center;
+}
+
+.areatitle h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: solid 2px red;
+    width: 750px;
+    padding-bottom: 10px;
+}
+
+.area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.area a {
+    font-size: 14px;
+    border: solid 1px #80808052;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+/*ホットなスポット*/
+.spot {
+    display: flex;
+    align-items: center;
+}
+
+.spot h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: solid 2px red;
+    width: 750px;
+    padding-bottom: 10px;
+}
+
+.spot-area {
+    flex-wrap: wrap;
+    height: 80px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.spot-area p {
+    margin: 5px 0;
+}
+
+.spot-area a::before {
+    content: ">";
+    color: orange;
+}
+
+/*ジャンルで選ぶ*/
+.food {
+    display: flex;
+    align-items: center;
+}
+
+.food h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: solid 2px red;
+    width: 750px;
+    padding-bottom: 10px;
+}
+
+.food-content {
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+/*料理の写真画像*/
+.food-name {
+    border: solid 1px #80808052;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.food-name p {
+    padding: 5px;
+}
+
+/*こだわりで選ぶ*/
+.sticking {
+    display: flex;
+    align-items: center;
+}
+
+.sticking h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: solid 2px red;
+    width: 750px;
+    padding-bottom: 10px;
+}
+
+.sticking-type {
+    padding-left: 35px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.sticking-type a {
+    font-size: 15px;
+    border: solid 1px #80808052;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+/*ライターのおすすめ*/
+.writer {
+    display: flex;
+    align-items: center;
+}
+
+.writer h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: solid 2px red;
+    width: 750px;
+    padding-bottom: 10px;
+}
+
+.writer-title {
+    font-size: 13px;
+    padding-left: 80px;
+}
+
+.writer-food {
+    padding-left: 20px;
+}
+
+/*料理の画像と説明*/
+figure {
+    border: solid 1px #80808052;
+    width: 360px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.writer-food h3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.writer-food p {
+    font-size: 11px;
+    text-align: left;
+    line-height: 22px;
+}
+
+/*ユーザーのレビュー*/
+.review {
+    display: flex;
+    align-items: center;
+}
+
+.review h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: solid 2px red;
+    width: 750px;
+    padding-bottom: 10px;
+}
+
+.review-content {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.review-user {
+    width: 360px;
+    border: solid 1px #80808052;
+    display: inline-block;
+    margin:20px 0 0 20px;
+    padding:0 5px;
+}
+
+/*男性のレビューアイコン*/
+.review-userfrist {
+    width: 310px;
+    background-image: url(icon08.png);
+    background-repeat: no-repeat;
+    background-position: left 0px center;
+    padding: 20px 10px;
+    border-bottom: solid 1px #80808052;
+    margin: 0px 15px;
+}
+
+
+.review-userfrist p{
+    font-size: 16px;
+    padding: 0 60px;
+}
+
+.review-from {
+    font-size: 8px;
+}
+
+.review-userbottom h3 {
+    font-size: 18px;
+    margin: 20px 10px;
+    text-align: left;
+}
+
+.review-userbottom p {
+    margin: 10px 10px;
+    text-align: left;
+    font-size: 7px;
+    line-height: 20px;
+}
+
+.review-userbottom img {
+    margin: 5px 5px 10px 5px;
+}
+
+/*女性のレビューアイコン*/
+.review-usersecond {
+    width: 310px;
+    background-image: url(icon09.png);
+    background-repeat: no-repeat;
+    background-position: left 0px center;
+    padding: 20px 10px;
+    border-bottom: solid 1px #80808052;
+    margin: 0px 15px;
+}
+
+.review-usersecond p {
+    font-size: 16px;
+    padding: 0 60px;
+}
+/*右のコンテンツ*/
+.rightbar {
+    width: 270px;
+    margin-right: 40px;
+}
+
+.user {
+    background-color: #ffffe0;
+    height: 200px;
+    padding: 15px;
+}
+
+.user-content {
+    width: 240px;
+    background-color: #d3d3d3;
+    margin: 0 auto;
+}
+
+.user-top {
+    background-image: url(icon09.png);
+    background-repeat: no-repeat;
+    background-position: left 0 center;
+    padding-left: 60px;
+    width: 220px;
+    height: 70px;
+    border-bottom: solid 1px #80808052;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-top p {
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.user-from {
+    font-size: 7px;
+}
+
+.user-point {
+    background-image: url(icon10.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    height: 50px;
+    border-bottom: solid 1px #80808052;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-lank {
+    background-image: url(icon11.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.banner {
+    margin-top: 20px;
+}
+
+.footer {
+    border-top: solid 2px #80808033;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content li {
+    padding:40px 20px;
+}
+
+.footer-bottom {
+    background-color: #dcd5d5;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
